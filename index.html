@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Eletrônico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bingo Eletrônico</h1>
+    </header>
+    <main>
+        <section id="bingo-display">
+            <div class="letter" id="display-letter">?</div>
+            <div class="number" id="display-number">--</div>
+        </section>
+        <div class="controls">
+            <button id="draw-btn">Sortear número</button>
+            <button id="bingo-btn">Bingo!</button>
+        </div>
+        <section id="drawn-table-section">
+            <table id="drawn-table">
+                <thead>
+                    <tr>
+                        <th>B</th>
+                        <th>I</th>
+                        <th>N</th>
+                        <th>G</th>
+                        <th>O</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="col-B"></td>
+                        <td id="col-I"></td>
+                        <td id="col-N"></td>
+                        <td id="col-G"></td>
+                        <td id="col-O"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div id="end-message" class="hidden">
+            <span>Todos os números foram sorteados!</span>
+        </div>
+    </main>
+    <div id="modal-overlay" class="hidden">
+        <div id="modal-content">
+            <h2>Números Sorteados</h2>
+            <div id="modal-table-container"></div>
+            <button id="close-modal-btn">Voltar</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Bingo Eletrônico</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
